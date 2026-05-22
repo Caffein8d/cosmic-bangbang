@@ -94,9 +94,27 @@
             <h2 class="text-2xl font-semibold mb-4">Current Status</h2>
             <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-8">
                 <div class="flex items-center gap-3 mb-4">
-                    <span class="px-3 py-1 text-xs bg-amber-900 text-amber-400 rounded-full">Planning Phase</span>
+                    <span class="px-3 py-1 text-xs bg-emerald-900 text-emerald-400 rounded-full">Active Development</span>
                 </div>
-                <p class="text-[#9ca3af]">Detailed implementation plan and assessment report completed. Awaiting decision to begin building the first version of the router skill.</p>
+                <p class="text-[#9ca3af]">Tailscale connection established. Local qwen3-64k model integrated with 65k context. Basic routing pattern working. Hybrid routing logic and fire-and-forget handoff designed.</p>
+            </div>
+        </div>
+
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6">Progress & Updates</h2>
+            <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-8 space-y-6 text-sm">
+                <div>
+                    <div class="font-medium text-[#e0e1f0] mb-1">2026-05-22 — Tailscale Connection</div>
+                    <p class="text-[#9ca3af]">Secure private connection established between VPS and local machine. Local Ollama now reachable from the main agent.</p>
+                </div>
+                <div>
+                    <div class="font-medium text-[#e0e1f0] mb-1">2026-05-22 — Local Model Integration</div>
+                    <p class="text-[#9ca3af]">Created custom qwen3-64k model with 65,536 token context window. Full round-trip testing successful.</p>
+                </div>
+                <div>
+                    <div class="font-medium text-[#e0e1f0] mb-1">2026-05-23 — Routing & Handoff Design</div>
+                    <p class="text-[#9ca3af]">Hybrid routing logic designed (rules + judgment). Fire-and-forget handoff pattern with automatic notification completed. Local agents will run as lightweight Python scripts.</p>
+                </div>
             </div>
         </div>
 
