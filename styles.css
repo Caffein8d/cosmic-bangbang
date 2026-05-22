@@ -28,6 +28,10 @@
 
 body {
     background-color: var(--bg-deep);
+    background-image: url('cosmic-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: var(--text-primary);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
