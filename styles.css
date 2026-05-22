@@ -1,4 +1,21 @@
 /* Cosmic Dark Theme */
+
+.cosmic-glow {
+    text-shadow:
+        0 0 10px #6366f1,
+        0 0 20px #6366f1,
+        0 0 40px #818cf8,
+        0 0 80px #6366f1;
+    transition: text-shadow 0.3s ease;
+}
+
+.cosmic-glow:hover {
+    text-shadow:
+        0 0 15px #6366f1,
+        0 0 30px #6366f1,
+        0 0 60px #818cf8,
+        0 0 100px #6366f1;
+}
 :root {
     --bg-deep: #0a0b14;
     --bg-card: #12131f;
