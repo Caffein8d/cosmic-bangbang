@@ -74,14 +74,15 @@ header {
 
 /* Cards & Sections */
 .bg-white {
-    background-color: var(--bg-card) !important;
+    background-color: rgba(18, 19, 31, 0.75) !important;
     border: 1px solid var(--border);
     transition: all 0.3s ease;
+    backdrop-filter: blur(12px);
 }
 
 .bg-white:hover {
     border-color: var(--accent);
-    box-shadow: 0 0 20px rgba(99, 102, 241, 0.1);
+    box-shadow: 0 0 25px rgba(99, 102, 241, 0.15);
 }
 
 /* Accent Colors */
