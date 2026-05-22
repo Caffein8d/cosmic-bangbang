@@ -28,7 +28,7 @@
 
 body {
     background-color: var(--bg-deep);
-    background-image: url('cosmic-background.png');
+    background-image: url('/cosmic-background.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
