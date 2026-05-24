@@ -160,9 +160,30 @@
                     <div class="flex-1">
                         <div class="font-medium mb-1">9. Future Hosting Migration (Long-term Goal)</div>
                         <div class="pl-6 mt-3 space-y-3 text-sm text-[#9ca3af]">
-                            <div class="flex gap-3"><span class="text-[#9ca3af]">⟳</span> Research standalone hosting options (Vercel, Netlify, Render, VPS, etc.)</div>
-                            <div class="flex gap-3"><span class="text-[#9ca3af]">⟳</span> Evaluate pros/cons vs GitHub Pages (custom domains, performance, backend support)</div>
-                            <div class="flex gap-3"><span class="text-[#9ca3af]">⟳</span> Plan migration when the project requires more advanced features</div>
+                            <div class="flex gap-3"><span class="text-[#9ca3af]">⟳</span> Research standalone hosting options while maintaining zero cost</div>
+                            <div class="flex gap-3"><span class="text-[#9ca3af]">⟳</span> Evaluate free-tier limits (build minutes, bandwidth, custom domains, functions)</div>
+                            <div class="flex gap-3"><span class="text-[#9ca3af]">⟳</span> Consider migration only when GitHub Pages becomes a clear limitation</div>
+                        </div>
+
+                        <div class="pl-6 mt-4 text-sm">
+                            <div class="font-medium text-[#e0e1f0] mb-2">Zero-Cost Hosting Options to Evaluate</div>
+                            <ul class="list-disc pl-5 space-y-1 text-[#9ca3af]">
+                                <li><strong>Vercel (Hobby)</strong> — Excellent free tier, great DX, automatic previews. 100GB bandwidth/month, unlimited static sites.</li>
+                                <li><strong>Netlify (Starter)</strong> — Strong free tier, good forms & functions. 100GB bandwidth, 300 build minutes/month.</li>
+                                <li><strong>Cloudflare Pages</strong> — Very generous free tier, fast global CDN. Unlimited sites, 20k files per deployment.</li>
+                                <li><strong>Render (Static Sites)</strong> — Simple free tier for static sites. 100GB bandwidth, automatic deploys from Git.</li>
+                                <li><strong>GitHub Pages</strong> (Current) — Completely free, tight integration with repo. Limited to static files only.</li>
+                            </ul>
+                        </div>
+
+                        <div class="pl-6 mt-4 text-sm">
+                            <div class="font-medium text-[#e0e1f0] mb-2">When to Consider Migration</div>
+                            <ul class="list-disc pl-5 space-y-1 text-[#9ca3af]">
+                                <li>Need custom domain with HTTPS without workarounds</li>
+                                <li>Require serverless functions or API routes</li>
+                                <li>Hit GitHub Pages bandwidth or build limits</li>
+                                <li>Want better preview deployments per branch</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
