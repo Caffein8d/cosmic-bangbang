@@ -88,7 +88,26 @@
                 <div class="flex items-center gap-3 mb-4">
                     <span class="px-3 py-1 text-xs bg-emerald-900 text-emerald-400 rounded-full">Active Development</span>
                 </div>
-                <p class="text-[#9ca3af]">Tailscale connection established. Local qwen3-64k model integrated with 65k context. Basic routing pattern working. Hybrid routing logic and fire-and-forget handoff designed.</p>
+                <p class="text-[#9ca3af]">Tailscale connection established. Local qwen3-64k model integrated with 65k context. Basic routing pattern working. Hybrid routing logic and fire-and-forget handoff designed. Lightweight Python agents running locally.</p>
+            </div>
+        </div>
+
+        <!-- Current Architecture -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6">Current Architecture</h2>
+            <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-8 space-y-6 text-sm">
+                <div>
+                    <div class="font-medium text-[#e0e1f0] mb-2">Local Agents</div>
+                    <p class="text-[#9ca3af]">Lightweight Python scripts running locally. Communication handled via Tailscale for secure private networking.</p>
+                </div>
+                <div>
+                    <div class="font-medium text-[#e0e1f0] mb-2">Routing Logic</div>
+                    <p class="text-[#9ca3af]">Hybrid approach combining rule-based decisions with main agent judgment. The primary agent evaluates each task and decides the destination.</p>
+                </div>
+                <div>
+                    <div class="font-medium text-[#e0e1f0] mb-2">Handoff Pattern</div>
+                    <p class="text-[#9ca3af]">Fire-and-forget handoff with automatic notification back to the main agent upon completion.</p>
+                </div>
             </div>
         </div>
 
@@ -134,4 +153,15 @@
         </div>
     </div>
 </body>
-</html>
+</html>        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6">Remaining Design Decisions</h2>
+            <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-8 text-sm">
+                <p class="text-[#9ca3af] mb-4">The following decisions are still open and documented in the Growth Project living notes:</p>
+                <ul class="list-disc pl-5 space-y-2 text-[#9ca3af]">
+                    <li>Exact criteria for when the main agent should route vs handle locally</li>
+                    <li>Notification mechanism details for completed tasks</li>
+                    <li>Monitoring and logging approach for routed tasks</li>
+                    <li>Failure handling and retry strategy</li>
+                </ul>
+            </div>
+        </div>
