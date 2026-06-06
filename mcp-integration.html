@@ -101,6 +101,69 @@
             </div>
         </div>
 
+        <!-- Recommended MCP Servers -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-6">Recommended MCP Servers</h2>
+            <p class="text-[#9ca3af] mb-6">Initial research on high-value MCP servers for the Growth Project. Focus is on servers that meaningfully extend our current Hermes capabilities (terminal + file tools already strong).</p>
+
+            <div class="space-y-6">
+                <!-- Filesystem -->
+                <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="font-semibold text-lg">Filesystem</div>
+                        <div class="px-3 py-1 text-xs bg-emerald-900 text-emerald-400 rounded-full">Difficulty: Low</div>
+                    </div>
+                    <div class="text-sm text-[#9ca3af] mb-3">@modelcontextprotocol/server-filesystem (official reference)</div>
+                    <div class="text-sm mb-2"><span class="font-medium text-[#e0e1f0]">Rationale:</span> Secure, controlled access to local files and directories. Highest immediate value for development workflows.</div>
+                    <div class="text-sm"><span class="font-medium text-[#e0e1f0]">Integration Notes:</span> Very easy via stdio. Can be scoped to specific directories for safety.</div>
+                </div>
+
+                <!-- Git -->
+                <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="font-semibold text-lg">Git</div>
+                        <div class="px-3 py-1 text-xs bg-emerald-900 text-emerald-400 rounded-full">Difficulty: Low</div>
+                    </div>
+                    <div class="text-sm text-[#9ca3af] mb-3">mcp-server-git (Python)</div>
+                    <div class="text-sm mb-2"><span class="font-medium text-[#e0e1f0]">Rationale:</span> Read, search, and inspect Git repositories without leaving the agent context. Complements existing terminal git usage.</div>
+                    <div class="text-sm"><span class="font-medium text-[#e0e1f0]">Integration Notes:</span> Simple to install via uvx or pip. Low risk.</div>
+                </div>
+
+                <!-- Memory -->
+                <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="font-semibold text-lg">Memory (Knowledge Graph)</div>
+                        <div class="px-3 py-1 text-xs bg-amber-900 text-amber-400 rounded-full">Difficulty: Medium</div>
+                    </div>
+                    <div class="text-sm text-[#9ca3af] mb-3">@modelcontextprotocol/server-memory</div>
+                    <div class="text-sm mb-2"><span class="font-medium text-[#e0e1f0]">Rationale:</span> Adds a structured knowledge graph memory layer. Could work alongside our holographic memory system for entity relationships.</div>
+                    <div class="text-sm"><span class="font-medium text-[#e0e1f0]">Integration Notes:</span> Easy to run, but requires thought on how it interacts with existing memory providers.</div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="font-semibold text-lg">GitHub</div>
+                        <div class="px-3 py-1 text-xs bg-amber-900 text-amber-400 rounded-full">Difficulty: Medium</div>
+                    </div>
+                    <div class="text-sm text-[#9ca3af] mb-3">Community GitHub MCP servers</div>
+                    <div class="text-sm mb-2"><span class="font-medium text-[#e0e1f0]">Rationale:</span> Full GitHub API access (issues, PRs, repos, actions). High value for development and project management.</div>
+                    <div class="text-sm"><span class="font-medium text-[#e0e1f0]">Integration Notes:</span> Requires GitHub token. Medium complexity due to auth and rate limits.</div>
+                </div>
+
+                <!-- Composio / Zapier -->
+                <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-6">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="font-semibold text-lg">Composio or Zapier MCP</div>
+                        <div class="px-3 py-1 text-xs bg-red-900 text-red-400 rounded-full">Difficulty: Medium-High</div>
+                    </div>
+                    <div class="text-sm text-[#9ca3af] mb-3">Composio-MCP or Zapier MCP</div>
+                    <div class="text-sm mb-2"><span class="font-medium text-[#e0e1f0]">Rationale:</span> Umbrella access to hundreds of SaaS tools (Linear, Slack, Gmail, Notion, Calendar, etc.) through one connection. Massive capability expansion.</div>
+                    <div class="text-sm"><span class="font-medium text-[#e0e1f0]">Integration Notes:</span> Best long-term option but requires account setup and evaluating auth/security model.</div>
+                </div>
+            </div>
+        </div>
+
         <!-- Next Steps -->
         <div class="mb-16">
             <h2 class="text-2xl font-semibold mb-4">Next Steps</h2>
