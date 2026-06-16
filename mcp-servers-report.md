@@ -30,6 +30,8 @@ These umbrella-style MCP servers act as gateways to hundreds of SaaS application
 
 The Sequential Thinking server encourages the agent to break problems into explicit thought sequences and reflect step by step. It is particularly well suited for creative or exploratory work where linear tool calling is less effective than deliberate reasoning. In our environment, this could be valuable when we want an agent to think through complex Growth Project decisions or generate more thoughtful responses. Its design is lightweight and focused on process rather than external data. It is one of the more “fun” servers because it changes how the agent behaves rather than what it can access.
 
+**Update (June 6, 2026):** Installed and enabled in the artemis profile. A full re-evaluation of all previously considered MCP servers was performed using structured sequential thinking. Results confirmed that short-term recommendations (Filesystem, Git, GitHub, Memory) remain strong, Composio/Zapier stay as the top long-term leverage play, and Sequential Thinking itself is a valuable addition for complex planning tasks. New experimental candidates (Linear/Notion, Obsidian) were identified for future consideration.
+
 ## Time MCP Server
 
 While simple in scope, the Time server provides accurate time and timezone information. This becomes surprisingly useful in multi-persona or multi-timezone scenarios, and for any creative work that involves scheduling, storytelling, or time-based context. Its design is minimal and reliable. For us, it could support more natural coordination between Artemis and the other personas, especially if we begin running scheduled or background tasks.
