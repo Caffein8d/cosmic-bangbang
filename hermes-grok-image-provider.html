@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hermes Grok Image Provider • Cosmic BoomBoom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-[#e0e1f0]">
+    <!-- Navigation -->
+    <nav class="sticky top-0 z-50 border-b border-[#1f2235]">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-semibold tracking-tight">
+                <a href="index.html">Cosmic BoomBoom</a>
+            </div>
+            <div class="space-x-8 text-sm">
+                <a href="index.html#projects" class="hover:text-[#818cf8] transition">Back to Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="max-w-4xl mx-auto px-6 pt-16 pb-24">
+        <!-- Header -->
+        <div class="mb-12">
+            <div class="flex items-center gap-3 mb-4">
+                <span class="px-3 py-1 text-xs bg-[#052e16] text-emerald-400 rounded-full">Infrastructure</span>
+                <span class="text-sm text-[#9ca3af]">June 2026</span>
+            </div>
+            <h1 class="text-5xl font-bold tracking-tight mb-4 cosmic-glow">Hermes Grok Image Provider</h1>
+            <p class="text-xl text-[#9ca3af]">Enabling native Grok/xAI image generation support in Hermes Agent through the <code>image_generate</code> tool.</p>
+        </div>
+
+        <!-- Overview -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-4">Overview</h2>
+            <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-8">
+                <p class="text-[#9ca3af]">This project explored adding the ability for agents (like Nova) to choose between different image generation providers (FAL vs xAI/Grok) when calling the <code>image_generate</code> tool.</p>
+            </div>
+        </div>
+
+        <!-- Key Discovery -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-4">Key Discovery</h2>
+            <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-8">
+                <p class="text-[#9ca3af] mb-4">Full support for xAI image generation <strong>already existed</strong> in Hermes under the provider name <code>xai</code>.</p>
+                <ul class="text-[#9ca3af] space-y-2 list-disc list-inside">
+                    <li>Provider registered as <code>xai</code> (not <code>grok</code>)</li>
+                    <li>Models: <code>grok-imagine-image</code> and <code>grok-imagine-image-quality</code></li>
+                    <li>Uses official xAI endpoint: <code>https://api.x.ai/v1/images/generations</code></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Usage -->
+        <div class="mb-16">
+            <h2 class="text-2xl font-semibold mb-4">Usage</h2>
+            <div class="bg-[#12131f] border border-[#1f2235] rounded-2xl p-8 font-mono text-sm">
+                <pre>image_generate(
+    prompt="A dramatic supernova...",
+    aspect_ratio="landscape",
+    provider="xai"        # or "fal"
+)</pre>
+            </div>
+            <p class="text-sm text-[#9ca3af] mt-3">This information is now also documented in the <code>hermes-agent</code> skill.</p>
+        </div>
+
+        <!-- Links -->
+        <div class="mt-12 pt-8 border-t border-[#1f2235]">
+            <div class="flex gap-4">
+                <a href="https://github.com/Caffein8d/hermes-grok-image-provider" 
+                   class="px-6 py-3 bg-[#6366f1] hover:bg-[#5558e3] text-white rounded-full transition text-sm">
+                    View on GitHub
+                </a>
+                <a href="index.html#projects" 
+                   class="px-6 py-3 border border-[#1f2235] hover:bg-[#12131f] rounded-full transition text-sm">
+                    Back to Projects
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
